@@ -1,6 +1,10 @@
-# Dhana siri Koppisetti Portfolio
+# Dhana Siri Koppisetti Portfolio
 
-A modern, responsive personal portfolio website built with React, Vite, and Framer Motion. Showcases frontend development skills, UI/UX design, and motion-first web experiences.
+A modern, responsive personal portfolio website built with React, Vite, and Framer Motion. Showcases full-stack development skills, problem-solving capabilities, and production-ready projects.
+
+## GitHub Repository
+
+https://github.com/Dhanasirikoppisetti/Portfolio2
 
 ## Tech Stack
 
@@ -16,6 +20,8 @@ A modern, responsive personal portfolio website built with React, Vite, and Fram
 ✓ Parallax scrolling decorative elements (blobs, rings)  
 ✓ On-scroll reveal animations with staggered effects  
 ✓ Hero, About, Skills, Projects, and Contact sections  
+✓ 200+ coding problems solved (competitive programming)  
+✓ 5+ production-like projects with real GitHub links  
 ✓ Prefers-reduced-motion accessibility support  
 ✓ SEO-ready metadata  
 ✓ No horizontal scrollbars at any breakpoint  
@@ -46,34 +52,53 @@ A modern, responsive personal portfolio website built with React, Vite, and Fram
    npm run preview
    ```
 
-## Customization
-
-Before deployment, update the following placeholders in `src/App.jsx`:
-
-- Replace project GitHub links in the `projects` array
-- Update email address in `socials` array  
-- Update GitHub and LinkedIn profile URLs
-- Add real project descriptions and screenshots
-
 ## Deployment
 
-1. Push your repository to GitHub
-2. Connect to Vercel or Netlify
-3. Both platforms auto-detect Vite and configure builds automatically
-4. Every push to main triggers a new deployment
+### Option A: Vercel (Recommended for React/Vite)
 
-## Performance & Accessibility
+1. Visit [vercel.com](https://vercel.com)
+2. Click "New Project"
+3. Import your GitHub repository
+4. Vercel auto-detects Vite configuration
+5. Click "Deploy"
+6. Every push to main automatically triggers a new deployment
 
-- Animations use only `transform` and `opacity` for optimal performance
-- All interactive elements are keyboard accessible
-- Respects `prefers-reduced-motion` system preference
-- SEO tags included (viewport, description, title)
+### Option B: Netlify
 
-## Author
-
-Dhana siri Koppisetti
+1. Visit [netlify.com](https://netlify.com)
+2. Click "Add new site" → "Import an existing project"
+3. Connect your GitHub repository
+4. Configure build settings:
+   - Build command: `npm run build`
+   - Publish directory: `dist`
+5. Click "Deploy site"
 
 ## Live Demo
 
-[Your deployment URL here]
+**Coming soon after deployment to Vercel/Netlify** — Check back after pushing the production build!
+
+## Project Highlights
+
+### Payment Gateway (Node.js + PostgreSQL + Redis)
+Asynchronous payment processing system with secure webhook verification and refund management.
+
+### Mini SQL Database Engine (Python)
+SQL query engine supporting SELECT, WHERE, and COUNT aggregation with CLI interface.
+
+### Internationalized Web App (React + Tailwind)
+Multilingual React SPA supporting English, Spanish, Arabic (RTL), and Japanese with locale-aware formatting.
+
+## Contact
+
+- **Phone:** +91 9951718354
+- **Email:** koppisettidhanasiri@gmail.com
+- **GitHub:** https://github.com/Dhanasirikoppisetti
+- **LinkedIn:** https://www.linkedin.com/in/dhanasiri-koppisetti/
+
+## Author
+
+**Dhana Siri Koppisetti**  
+B.Tech in Artificial Intelligence and Machine Learning (CGPA: 8.68)  
+Aditya College of Engineering and Technology
+
 
