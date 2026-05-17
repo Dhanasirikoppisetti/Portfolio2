@@ -10,51 +10,53 @@ const navLinks = [
 ];
 
 const skills = [
-  'React',
-  'Next.js',
+  'Python',
   'JavaScript',
-  'TypeScript',
-  'Tailwind CSS',
-  'Framer Motion',
+  'Java',
+  'C++',
+  'React',
+  'Node.js',
+  'Express.js',
+  'PostgreSQL',
+  'MySQL',
+  'Redis',
+  'Docker',
   'Git',
-  'Accessibility',
-  'Responsive UI',
-  'Performance',
-  'API Integration',
-  'Design Systems',
+  'Tailwind CSS',
+  'REST APIs',
 ];
 
 const projects = [
   {
-    title: 'PulseGrid Analytics',
+    title: 'Payment Gateway',
     description:
-      'A dashboard concept for tracking team activity, product metrics, and release health in one crisp interface. Built to keep dense data readable without feeling heavy.',
-    stack: ['React', 'Chart UI', 'CSS Grid'],
-    github: 'https://github.com/dhanasiri-koppisetti/pulsegrid-analytics',
-    demo: 'https://example.com',
+      'Asynchronous payment processing system with Redis job queues and secure webhook verification. Handles refund management and scalable payment processing.',
+    stack: ['Node.js', 'PostgreSQL', 'Redis'],
+    github: 'https://github.com/dhanasiri-koppisetti/payment-gateway',
+    demo: 'https://github.com/dhanasiri-koppisetti/payment-gateway',
   },
   {
-    title: 'SkillGraph Studio',
+    title: 'Mini SQL Database Engine',
     description:
-      'A skill-mapping experience that visualizes growth over time with compact cards, progress indicators, and motion-led storytelling. Focused on clarity and personality.',
-    stack: ['Frontend UI', 'Motion', 'Responsive Design'],
-    github: 'https://github.com/dhanasiri-koppisetti/skillgraph-studio',
-    demo: 'https://example.com',
+      'SQL engine supporting SELECT, WHERE filtering, and COUNT aggregation. Built CLI interface for executing queries directly on CSV datasets.',
+    stack: ['Python', 'SQL', 'CLI'],
+    github: 'https://github.com/dhanasiri-koppisetti/mini-sql-engine',
+    demo: 'https://github.com/dhanasiri-koppisetti/mini-sql-engine',
   },
   {
-    title: 'Portfolio Motion Lab',
+    title: 'Internationalized Web App',
     description:
-      'A lightweight experimental site for testing parallax depth, staggered reveals, and cinematic hero composition. The goal is to make motion feel intentional, not decorative.',
-    stack: ['Framer Motion', 'Vite', 'Accessibility'],
-    github: 'https://github.com/dhanasiri-koppisetti/portfolio-motion-lab',
-    demo: 'https://example.com',
+      'Multilingual React SPA supporting English, Spanish, Arabic (RTL), and Japanese. Implements language switching with locale-aware formatting.',
+    stack: ['React', 'Tailwind CSS', 'i18n'],
+    github: 'https://github.com/dhanasiri-koppisetti/i18n-webapp',
+    demo: 'https://i18n-webapp-demo.vercel.app',
   },
 ];
 
 const socials = [
   { label: 'GitHub', href: 'https://github.com/dhanasiri-koppisetti' },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/dhanasiri-koppisetti/' },
-  { label: 'Email', href: 'mailto:dhanasiri.koppisetti@example.com' },
+  { label: 'Email', href: 'mailto:koppisettidhanasiri@gmail.com' },
 ];
 
 function SectionHeading({ eyebrow, title, copy }) {
@@ -123,13 +125,14 @@ function App() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: 'easeOut' }}
           >
-            <p className="eyebrow">Frontend Development · UI Motion · Responsive Design</p>
+            <p className="eyebrow">B.Tech AI/ML · Full Stack Developer · Problem Solver</p>
             <h1>
-              Build polished digital experiences with personality and motion.
+              Build scalable applications with clean code and solid fundamentals.
             </h1>
             <p className="hero-text">
-              I am Dhana siri Koppisetti, a frontend developer focused on clear interface systems,
-              modern animation, and responsive layouts that feel sharp on every device.
+              I'm Dhana Siri Koppisetti, a B.Tech student in AI/ML with strong foundations in data
+              structures, backend development, and full-stack web technologies. I build asynchronous
+              systems, craft responsive UIs, and solve algorithmic challenges.
             </p>
 
             <div className="hero-actions">
@@ -143,16 +146,16 @@ function App() {
 
             <div className="hero-meta">
               <div>
+                <strong>200+</strong>
+                <span>problems solved</span>
+              </div>
+              <div>
+                <strong>8.68</strong>
+                <span>college CGPA</span>
+              </div>
+              <div>
                 <strong>5+</strong>
-                <span>core frontend skills</span>
-              </div>
-              <div>
-                <strong>3</strong>
-                <span>featured projects</span>
-              </div>
-              <div>
-                <strong>1</strong>
-                <span>motion-first portfolio</span>
+                <span>projects built</span>
               </div>
             </div>
           </motion.div>
@@ -168,10 +171,11 @@ function App() {
             </div>
             <div className="hero-panel-copy">
               <p className="eyebrow">Current focus</p>
-              <h3>Designing fast, accessible, and expressive interfaces.</h3>
+              <h3>Building scalable backends and interactive frontends.</h3>
               <p>
-                I enjoy component-based architecture, scroll storytelling, and systems that make
-                collaboration with design and engineering teams straightforward.
+                Focused on data structures, algorithms, and full-stack development. Experienced with
+                asynchronous systems, database optimization, and responsive UI design across multiple
+                frameworks and languages.
               </p>
             </div>
           </motion.aside>
@@ -180,8 +184,8 @@ function App() {
         <section className="section-grid about-section" id="about">
           <SectionHeading
             eyebrow="About"
-            title="A focused builder with a taste for visual clarity."
-            copy="I create personal and product experiences that balance structure, motion, and readability. The goal is always the same: make the interface feel polished without slowing the user down."
+            title="Motivated student with strong technical foundations."
+            copy="I build scalable applications with clean code, focusing on data structures, algorithms, and full-stack web development. My goal is to solve complex problems efficiently and create responsive, user-friendly interfaces."
           />
 
           <motion.div
@@ -195,15 +199,16 @@ function App() {
               <span>DK</span>
             </div>
             <div>
-              <h3>Developer, UI thinker, and animation enthusiast.</h3>
+              <h3>B.Tech AI/ML student with full-stack capabilities.</h3>
               <p>
-                I enjoy turning rough ideas into responsive experiences with clear hierarchy and
-                memorable motion. Right now I am sharpening my frontend architecture and motion
-                design skills while building projects that feel production-ready.
+                Currently pursuing B.Tech in Artificial Intelligence and Machine Learning at Aditya
+                College of Engineering and Technology (CGPA: 8.68). I have built production-like
+                applications including asynchronous payment systems, SQL query engines, and
+                multilingual web applications.
               </p>
               <p>
-                My approach is practical: build the layout first, refine the content, then add
-                motion only where it improves the story or the interaction.
+                My approach combines problem-solving fundamentals with practical web development.
+                I focus on code quality, performance optimization, and building systems that scale.
               </p>
             </div>
           </motion.div>
@@ -212,8 +217,8 @@ function App() {
         <section className="section-grid skills-section" id="skills">
           <SectionHeading
             eyebrow="Skills"
-            title="Tools and techniques I use to build responsive interfaces."
-            copy="These are the technologies and working practices that shape the way I design and ship frontend work."
+            title="Languages, frameworks, and tools I use daily."
+            copy="Strong foundations in data structures and algorithms, combined with hands-on experience across the full stack. Certified in multiple programming languages and cloud technologies."
           />
 
           <motion.div
@@ -247,8 +252,8 @@ function App() {
         <section className="section-grid projects-section" id="projects">
           <SectionHeading
             eyebrow="Projects"
-            title="Three portfolio-ready projects with a clear technical story."
-            copy="Each project card includes the stack, a concise summary, and links so the structure is ready for a public showcase."
+            title="Three production-focused projects demonstrating full-stack capabilities."
+            copy="Each project represents real-world problem solving: from asynchronous systems to database optimization to multilingual web applications."
           />
 
           <div className="projects-grid">
@@ -287,8 +292,8 @@ function App() {
         <section className="section-grid contact-section" id="contact">
           <SectionHeading
             eyebrow="Contact"
-            title="Open to frontend roles, freelance work, and collaboration."
-            copy="If you want to discuss a role, project, or design challenge, the fastest way to reach me is through email or LinkedIn."
+            title="Let's connect and build something great."
+            copy="Interested in internships, freelance opportunities, or just want to discuss tech? Reach out via email, LinkedIn, or check out my GitHub for more projects."
           />
 
           <motion.div
@@ -298,6 +303,10 @@ function App() {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.7, ease: 'easeOut' }}
           >
+            <a href="tel:+919951718354">
+              <span>Phone</span>
+              <strong>+91 9951718354</strong>
+            </a>
             {socials.map((item) => (
               <a key={item.label} href={item.href} target={item.label === 'Email' ? undefined : '_blank'} rel={item.label === 'Email' ? undefined : 'noreferrer'}>
                 <span>{item.label}</span>
@@ -309,8 +318,8 @@ function App() {
       </main>
 
       <footer className="footer">
-        <p>Dhana siri Koppisetti</p>
-        <p>Frontend Development · UI / UX Design · Motion Design</p>
+        <p>Dhana Siri Koppisetti</p>
+        <p>B.Tech AI/ML · Full Stack Development · Problem Solving</p>
       </footer>
     </div>
   );
